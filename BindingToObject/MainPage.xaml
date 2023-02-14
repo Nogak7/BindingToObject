@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BindingToObject.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:BindingToObject.Models"
+    BindingContext="{Binding Source={RelativeSource Self}}">
+
+    <StackLayout>
+        <Entry Text="{Binding Phones.PhoneNumber}" />
+        <Entry Text="{Binding Phones.Model}" />
+        <Image
+            Aspect="AspectFit"
+            HeightRequest="180"
+            Source="{Binding Phones.Image}"
+            WidthRequest="180" />
+        <Label Text="{Binding Phones.PhoneNumber}" />
+    </StackLayout>
+
+</ContentPage>
