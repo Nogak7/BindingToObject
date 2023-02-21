@@ -2,19 +2,29 @@
 <ContentPage
     x:Class="BindingToObject.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:models="clr-namespace:BindingToObject.Models"
-    BindingContext="{Binding Source={RelativeSource Self}}">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <StackLayout>
-        <Entry Text="{Binding Phones.PhoneNumber}" />
-        <Entry Text="{Binding Phones.Model}" />
-        <Image
-            Aspect="AspectFit"
-            HeightRequest="180"
-            Source="{Binding Phones.Image}"
-            WidthRequest="180" />
-        <Label Text="{Binding Phones.PhoneNumber}" />
+    <!--  פריסה לאורך  -->
+    <StackLayout
+        Padding="10"
+        HorizontalOptions="Center"
+        Spacing="13">
+        <Label HorizontalOptions="Center" Text="" />
+
+        <!--  מסגרת עגולה מסביב לתמונה  -->
+        <Border HeightRequest="180" WidthRequest="180">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="90" />
+            </Border.StrokeShape>
+            <Image HorizontalOptions="Center" Source="" />
+        </Border>
+        <!--  תאריך לידה  -->
+        <Label Text="" />
+        <!--  חישוב גיל  -->
+        <Button Clicked="Button_Clicked" Text="חשב גיל" />
+        <!--  גיל  -->
+        <Label HorizontalOptions="Center" Text="" />
+
     </StackLayout>
 
 </ContentPage>

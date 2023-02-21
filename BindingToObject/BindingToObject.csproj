@@ -49,7 +49,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\iphone.png" />
+	  <None Remove="Resources\Images\avital.jpg" />
+	  <None Remove="Resources\Images\aviv.jpg" />
+	  <None Remove="Resources\Images\gil.jpg" />
+	  <None Remove="Resources\Images\itamar.jpg" />
+	  <None Remove="Resources\Images\jofir.jpg" />
+	  <None Remove="Resources\Images\maya.jpg" />
+	  <None Remove="Resources\Images\ofek.jpg" />
+	  <None Remove="Resources\Images\ofekman.jpg" />
+	  <None Remove="Resources\Images\omer.jpg" />
+	  <None Remove="Resources\Images\roni.jpg" />
+	  <None Remove="Resources\Images\yali.jpg" />
 	</ItemGroup>
 
 </Project>
